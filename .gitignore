@@ -1,0 +1,4 @@
+.DS_Store
+
+# Local source photo archive. The optimized site images live in site/assets.
+source-photos/

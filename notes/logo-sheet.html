@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таня Бугаева | Варианты логотипа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600;700&family=Onest:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Tenor+Sans&family=Unbounded:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #151515;
+        --paper: #f7f6f1;
+        --white: #ffffff;
+        --line: rgba(21, 21, 21, 0.16);
+        --muted: rgba(21, 21, 21, 0.58);
+        --blue: #2b62ff;
+        --coral: #ff7568;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: Manrope, Arial, sans-serif;
+      }
+
+      .page {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 72px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 32px;
+        align-items: end;
+        padding-bottom: 34px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      .kicker {
+        color: var(--blue);
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin-top: 12px;
+        font-size: clamp(34px, 5vw, 64px);
+        line-height: 1;
+        font-weight: 500;
+      }
+
+      header p {
+        max-width: 620px;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.45;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+        margin-top: 30px;
+      }
+
+      .card {
+        min-height: 390px;
+        padding: 28px;
+        background: var(--white);
+        border: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 28px;
+      }
+
+      .card-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .mark-wrap {
+        min-height: 180px;
+        display: grid;
+        align-content: center;
+        gap: 18px;
+      }
+
+      .note {
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.45;
+      }
+
+      .logo-a .name {
+        font-family: "Tenor Sans", Arial, sans-serif;
+        font-size: clamp(48px, 7vw, 92px);
+        line-height: 0.92;
+        font-weight: 400;
+      }
+
+      .logo-a .sub {
+        font-family: Onest, Arial, sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      .logo-b .name {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: clamp(58px, 8vw, 112px);
+        line-height: 0.84;
+        font-weight: 500;
+      }
+
+      .logo-b .sub {
+        max-width: 330px;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+
+      .logo-c .name {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(48px, 7vw, 96px);
+        line-height: 0.9;
+        font-weight: 500;
+      }
+
+      .logo-c .sub {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+
+      .logo-c .sub::before {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 1px;
+        background: var(--ink);
+      }
+
+      .logo-d .monogram {
+        width: 132px;
+        height: 132px;
+        display: grid;
+        place-items: center;
+        border: 1px solid var(--ink);
+        border-radius: 50%;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 58px;
+        line-height: 1;
+      }
+
+      .logo-d .name {
+        font-family: Manrope, Arial, sans-serif;
+        font-size: clamp(32px, 4.4vw, 58px);
+        line-height: 1;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .logo-d .sub {
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .logo-e .name {
+        font-family: Unbounded, Arial, sans-serif;
+        font-size: clamp(30px, 4.8vw, 62px);
+        line-height: 1.02;
+        font-weight: 300;
+        text-transform: lowercase;
+      }
+
+      .logo-e .sub {
+        color: var(--blue);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .logo-f .name {
+        font-family: "Tenor Sans", Arial, sans-serif;
+        font-size: clamp(38px, 6vw, 80px);
+        line-height: 0.98;
+        font-weight: 400;
+      }
+
+      .logo-f .line {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .logo-f .line::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--coral);
+      }
+
+      .logo-f .sub {
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      .usage {
+        margin-top: 22px;
+        padding: 28px;
+        background: var(--white);
+        border: 1px solid var(--line);
+      }
+
+      .usage h2 {
+        font-size: 30px;
+        font-weight: 500;
+      }
+
+      .usage-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 22px;
+      }
+
+      .mini {
+        min-height: 120px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .mini strong {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .mini span {
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.35;
+      }
+
+      @media (max-width: 850px) {
+        header,
+        .grid,
+        .usage-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <div>
+          <p class="kicker">личный бренд без отдельного названия</p>
+          <h1>Варианты логотипа из имени</h1>
+        </div>
+        <p>
+          Основной смысл: сайт строится вокруг имени “Таня Бугаева”, а
+          пояснение Art Direction & Decor работает как сфера деятельности.
+          Главный сайт не меняла.
+        </p>
+      </header>
+
+      <section class="grid" aria-label="Варианты логотипа">
+        <article class="card logo-a">
+          <div class="card-head"><span>01</span><span>чисто / галерейно</span></div>
+          <div class="mark-wrap">
+            <div class="name">Таня<br />Бугаева</div>
+            <div class="sub">Art Direction & Decor</div>
+          </div>
+          <p class="note">
+            Самый мягкий и аккуратный вариант. Хорошо ляжет на светлый сайт и
+            реальные фото без ощущения “бренда ради бренда”.
+          </p>
+        </article>
+
+        <article class="card logo-b">
+          <div class="card-head"><span>02</span><span>editorial / арт</span></div>
+          <div class="mark-wrap">
+            <div class="name">Tanya<br />Bugaeva</div>
+            <div class="sub">art direction, decor, scenography for events and brands</div>
+          </div>
+          <p class="note">
+            Более журнальный и международный. Подходит, если хочется fashion и
+            арт-ощущение, а тексты оставить на русском.
+          </p>
+        </article>
+
+        <article class="card logo-c">
+          <div class="card-head"><span>03</span><span>премиально / спокойно</span></div>
+          <div class="mark-wrap">
+            <div class="name">Tanya Bugaeva</div>
+            <div class="sub">Art Direction & Decor</div>
+          </div>
+          <p class="note">
+            Одинарная строка для шапки сайта. Смотрится взросло, не спорит с
+            фотографиями и хорошо работает как подпись автора.
+          </p>
+        </article>
+
+        <article class="card logo-d">
+          <div class="card-head"><span>04</span><span>монограмма</span></div>
+          <div class="mark-wrap">
+            <div class="monogram">TB</div>
+            <div>
+              <div class="name">Tanya Bugaeva</div>
+              <div class="sub">Art director / decor / visual concepts</div>
+            </div>
+          </div>
+          <p class="note">
+            Можно использовать маленький знак в favicon, шапке, презентациях и
+            на коммерческом предложении.
+          </p>
+        </article>
+
+        <article class="card logo-e">
+          <div class="card-head"><span>05</span><span>современно / agency</span></div>
+          <div class="mark-wrap">
+            <div class="sub">art direction & decor</div>
+            <div class="name">tanya<br />bugaeva</div>
+          </div>
+          <p class="note">
+            Смелее и архитектурнее. Лучше для проектов с брендами, активациями,
+            поп-апами и масштабными пространствами.
+          </p>
+        </article>
+
+        <article class="card logo-f">
+          <div class="card-head"><span>06</span><span>русская подпись</span></div>
+          <div class="mark-wrap">
+            <div class="line">
+              <div class="name">Таня Бугаева</div>
+            </div>
+            <div class="sub">арт-директор / декор / визуальные концепции</div>
+          </div>
+          <p class="note">
+            Более личный и понятный русскоязычный вариант. Хорошо, если важно,
+            чтобы сайт сразу воспринимался как авторский.
+          </p>
+        </article>
+      </section>
+
+      <section class="usage">
+        <h2>Как я бы это применяла на сайте</h2>
+        <div class="usage-grid">
+          <div class="mini">
+            <strong>В шапке</strong>
+            <span>коротко: Tanya Bugaeva или Таня Бугаева, без отдельного названия</span>
+          </div>
+          <div class="mini">
+            <strong>На первом экране</strong>
+            <span>имя крупнее, ниже Art Direction & Decor и понятное описание услуг</span>
+          </div>
+          <div class="mini">
+            <strong>В документах</strong>
+            <span>монограмма TB или полное имя на коммерческом предложении</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

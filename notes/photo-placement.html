@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фото на сайте | Контроль размещения</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: #151515;
+        background: #f7f6f1;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 44px 0 70px;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        font-size: clamp(34px, 5vw, 62px);
+        line-height: 1;
+        font-weight: 400;
+      }
+
+      .lead {
+        max-width: 680px;
+        margin-top: 18px;
+        color: rgba(21, 21, 21, 0.62);
+        font-size: 18px;
+        line-height: 1.45;
+      }
+
+      section {
+        margin-top: 42px;
+      }
+
+      h2 {
+        margin-bottom: 18px;
+        font-size: 28px;
+        font-weight: 400;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .item {
+        background: #fff;
+        border-radius: 24px;
+        overflow: hidden;
+      }
+
+      .item img,
+      .item video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1.25 / 1;
+        object-fit: cover;
+      }
+
+      .body {
+        padding: 14px;
+      }
+
+      .slot {
+        color: #285dff;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      .body p {
+        margin-top: 6px;
+        color: rgba(21, 21, 21, 0.62);
+        font-size: 14px;
+        line-height: 1.35;
+      }
+
+      @media (max-width: 820px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Контроль фото: что куда поставлено</h1>
+      <p class="lead">
+        Это отдельный лист для проверки. По нему можно давать правки: заменить
+        конкретный файл, переставить порядок или попросить подвинуть кадрирование
+        выше, ниже, левее или правее.
+      </p>
+
+      <section>
+        <h2>Первый экран</h2>
+        <div class="grid">
+          <article class="item"><img src="assets/site-photos/hero-custom-1.jpg" alt="" /><div class="body"><span class="slot">hero 01</span><p>hero-custom-1.jpg / лампы</p></div></article>
+          <article class="item"><img src="assets/site-photos/hero-custom-2.jpg" alt="" /><div class="body"><span class="slot">hero 02</span><p>hero-custom-2.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/hero-custom-3.jpg" alt="" /><div class="body"><span class="slot">hero 03</span><p>hero-custom-3.jpg</p></div></article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Плашки форматов</h2>
+        <div class="grid">
+          <article class="item"><img src="assets/site-photos/format-custom-1.jpg" alt="" /><div class="body"><span class="slot">визуальная концепция</span><p>format-custom-1.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/format-custom-2.jpg" alt="" /><div class="body"><span class="slot">Art Direction</span><p>format-custom-2.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/format-custom-3.jpg" alt="" /><div class="body"><span class="slot">Art Direction + Decor</span><p>format-custom-3.jpg</p></div></article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Портфолио</h2>
+        <div class="grid">
+          <article class="item"><img src="assets/site-photos/noslov-1.jpg" alt="" /><div class="body"><span class="slot">Нет слов, только эмоции / 01</span><p>noslov-1.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/noslov-2.jpg" alt="" /><div class="body"><span class="slot">Нет слов, только эмоции / 02</span><p>noslov-2.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/noslov-3.jpg" alt="" /><div class="body"><span class="slot">Нет слов, только эмоции / 03</span><p>noslov-3.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/edge-1.jpg" alt="" /><div class="body"><span class="slot">На краю света / 01</span><p>edge-1.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/edge-2.jpg" alt="" /><div class="body"><span class="slot">На краю света / 02</span><p>edge-2.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/edge-3.jpg" alt="" /><div class="body"><span class="slot">На краю света / 03</span><p>edge-3.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/top100-1.jpg" alt="" /><div class="body"><span class="slot">top100 / 01</span><p>top100-1.jpg / IMG_3968.JPG</p></div></article>
+          <article class="item"><img src="assets/site-photos/top100-2.jpg" alt="" /><div class="body"><span class="slot">top100 / 02</span><p>top100-2.jpg / IMG_3966.JPG</p></div></article>
+          <article class="item"><img src="assets/site-photos/top100-3.jpg" alt="" /><div class="body"><span class="slot">top100 / 03</span><p>top100-3.jpg / IMG_3967.JPG</p></div></article>
+          <article class="item"><img src="assets/site-photos/spb-1.jpg" alt="" /><div class="body"><span class="slot">Ужин в Петербурге / 01</span><p>spb-1.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/spb-2.jpg" alt="" /><div class="body"><span class="slot">Ужин в Петербурге / 02</span><p>spb-2.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/spb-3.jpg" alt="" /><div class="body"><span class="slot">Ужин в Петербурге / 03</span><p>spb-3.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/spring-1.jpg" alt="" /><div class="body"><span class="slot">Весна шалит / 01</span><p>spring-1.jpg / DSC07182.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/spring-2.jpg" alt="" /><div class="body"><span class="slot">Весна шалит / 02</span><p>spring-2.jpg / DSC07266.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/spring-3.jpg" alt="" /><div class="body"><span class="slot">Весна шалит / 03</span><p>spring-3.jpg / DSC06882.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/brand-1.jpg" alt="" /><div class="body"><span class="slot">Гастро-ужин для бренда / 01</span><p>brand-1.jpg / UW7A9894.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/brand-2.jpg" alt="" /><div class="body"><span class="slot">Гастро-ужин для бренда / 02</span><p>brand-2.jpg / UW7A0406.jpg</p></div></article>
+          <article class="item"><video src="assets/site-photos/brand-video.mp4" poster="assets/site-photos/brand-video-poster.jpg" muted loop playsinline controls></video><div class="body"><span class="slot">Гастро-ужин для бренда / видео</span><p>brand-video.mp4 / IMG_4912.MOV</p></div></article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Дагестан: фоновые блоки</h2>
+        <div class="grid">
+          <article class="item"><img src="assets/site-photos/dagestan-proposal.jpg" alt="" /><div class="body"><span class="slot">коммерческое предложение</span><p>dagestan-proposal.jpg</p></div></article>
+          <article class="item"><img src="assets/site-photos/dagestan-timeline-poster.jpg" alt="" /><div class="body"><span class="slot">таймлайн / постер</span><p>dagestan-timeline-poster.jpg</p></div></article>
+          <article class="item"><video src="assets/site-photos/timeline-dagestan.mp4" poster="assets/site-photos/timeline-dagestan-poster.jpg" muted loop playsinline controls></video><div class="body"><span class="slot">таймлайн / видео</span><p>timeline-dagestan.mp4 / IMG_4690 2.MOV</p></div></article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

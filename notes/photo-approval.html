@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Согласование фото</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: #111;
+        background: #f7f6f1;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 44px 0 80px;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        max-width: 820px;
+        font-size: clamp(34px, 5vw, 64px);
+        line-height: 1;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      .lead {
+        max-width: 720px;
+        margin-top: 18px;
+        color: rgba(17, 17, 17, 0.62);
+        font-size: 18px;
+        line-height: 1.42;
+      }
+
+      section {
+        margin-top: 54px;
+      }
+
+      h2 {
+        margin-bottom: 18px;
+        font-size: clamp(24px, 3vw, 38px);
+        line-height: 1;
+        font-weight: 400;
+        text-transform: lowercase;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .item {
+        overflow: hidden;
+        border-radius: 26px;
+        background: #fff;
+      }
+
+      .item img,
+      .item video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1.12;
+        object-fit: cover;
+      }
+
+      .body {
+        padding: 14px;
+      }
+
+      .filename {
+        display: inline-flex;
+        min-height: 30px;
+        align-items: center;
+        padding: 0 10px;
+        border: 1px solid #111;
+        border-radius: 999px;
+        font-size: 13px;
+      }
+
+      .current {
+        margin-top: 8px;
+        color: rgba(17, 17, 17, 0.58);
+        font-size: 13px;
+      }
+
+      @media (max-width: 820px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>согласование фото</h1>
+      <p class="lead">
+        Здесь показаны реальные файлы из спорных папок. Можно выбрать порядок
+        прямо по именам файлов, и после этого я поставлю точную комбинацию на сайт.
+      </p>
+
+      <section>
+        <h2>событие для top100</h2>
+        <div class="grid">
+          <article class="item"><img src="assets/site-photos/approval/top100-IMG_3966.jpg" alt="" /><div class="body"><span class="filename">IMG_3966.JPG</span><p class="current">сейчас на сайте: 02</p></div></article>
+          <article class="item"><img src="assets/site-photos/approval/top100-IMG_3967.jpg" alt="" /><div class="body"><span class="filename">IMG_3967.JPG</span><p class="current">сейчас на сайте: 03</p></div></article>
+          <article class="item"><img src="assets/site-photos/approval/top100-IMG_3968.jpg" alt="" /><div class="body"><span class="filename">IMG_3968.JPG</span><p class="current">сейчас на сайте: 01</p></div></article>
+          <article class="item"><img src="assets/site-photos/approval/top100-IMG_3981.jpg" alt="" /><div class="body"><span class="filename">IMG_3981.JPG</span></div></article>
+          <article class="item"><img src="assets/site-photos/approval/top100-IMG_3982.jpg" alt="" /><div class="body"><span class="filename">IMG_3982.JPG</span></div></article>
+          <article class="item"><img src="assets/site-photos/approval/top100-IMG_3983.jpg" alt="" /><div class="body"><span class="filename">IMG_3983.JPG</span></div></article>
+          <article class="item"><img src="assets/site-photos/approval/top100-IMG_3984.jpg" alt="" /><div class="body"><span class="filename">IMG_3984.JPG</span></div></article>
+        </div>
+      </section>
+
+      <section>
+        <h2>весна шалит</h2>
+        <div class="grid">
+          <article class="item"><img src="assets/site-photos/approval/spring-DSC07182.jpg" alt="" /><div class="body"><span class="filename">DSC07182.jpg</span><p class="current">сейчас на сайте: 01</p></div></article>
+          <article class="item"><img src="assets/site-photos/approval/spring-DSC07266.jpg" alt="" /><div class="body"><span class="filename">DSC07266.jpg</span><p class="current">сейчас на сайте: 02</p></div></article>
+          <article class="item"><img src="assets/site-photos/approval/spring-DSC06882.jpg" alt="" /><div class="body"><span class="filename">DSC06882.jpg</span><p class="current">сейчас на сайте: 03</p></div></article>
+        </div>
+      </section>
+
+      <section>
+        <h2>гастро-ужин для бренда</h2>
+        <div class="grid">
+          <article class="item"><img src="assets/site-photos/approval/brand-UW7A9894.jpg" alt="" /><div class="body"><span class="filename">UW7A9894.jpg</span><p class="current">сейчас на сайте: 01, крупное фото</p></div></article>
+          <article class="item"><img src="assets/site-photos/approval/brand-UW7A0406.jpg" alt="" /><div class="body"><span class="filename">UW7A0406.jpg</span><p class="current">сейчас на сайте: 02</p></div></article>
+          <article class="item"><video src="assets/site-photos/brand-video.mp4" poster="assets/site-photos/brand-video-poster.jpg" muted loop playsinline controls></video><div class="body"><span class="filename">IMG_4912.MOV</span><p class="current">сейчас на сайте: 03, видео MP4</p></div></article>
+          <article class="item"><img src="assets/site-photos/approval/brand-UW7A9911.jpg" alt="" /><div class="body"><span class="filename">UW7A9911.jpg</span></div></article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
