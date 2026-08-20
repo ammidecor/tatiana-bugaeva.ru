@@ -902,8 +902,8 @@
             <a href="#contacts">контакты</a>
           </nav>
           <div class="nav-contact">
-            <a href="tel:+79114540558">+7 911 454 05 58</a>
-            <span>@ammi_f</span>
+            <a class="js-smart-phone" href="tel:+79114540558" data-desktop-href="https://t.me/ammi_f">+7 911 454 05 58</a>
+            <a href="https://instagram.com/ammi_f" target="_blank" rel="noreferrer">@ammi_f</a>
           </div>
         </div>
       </header>
@@ -1263,6 +1263,16 @@
 
       autoplayVideos.forEach((video) => {
         video.addEventListener("loadeddata", () => playVideo(video), { once: true });
+      });
+
+      document.querySelectorAll(".js-smart-phone").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const isMobileCall = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+          if (!isMobileCall) {
+            event.preventDefault();
+            window.open(link.dataset.desktopHref, "_blank", "noopener");
+          }
+        });
       });
 
       if ("IntersectionObserver" in window) {
