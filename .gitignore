@@ -2,3 +2,11 @@
 
 # Local source photo archive. The optimized site images live in site/assets.
 source-photos/
+
+# Local tooling, auth, and temporary deployment experiments.
+.gh-auth/
+.pnpm-store/
+.tools/
+deploy/
+sites-app/
+*.zip
