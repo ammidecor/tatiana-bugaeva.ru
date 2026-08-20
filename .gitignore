@@ -9,4 +9,5 @@ source-photos/
 .tools/
 deploy/
 sites-app/
+www-redirect/
 *.zip
