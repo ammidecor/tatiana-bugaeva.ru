@@ -58,6 +58,94 @@
       });
     </script>
     <!-- /Yandex.Metrika counter -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Что такое арт-дирекшн мероприятия?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Арт-дирекшн — это контроль идеи и всей визуальной системы события: декора, света, типографики, сценографии, костюма, подачи продукта, экранного контента и деталей, которые гость считывает как единую историю."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Чем арт-дирекшн отличается от декора?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Декор отвечает за предметную и декоративную часть пространства. Арт-директор собирает визуальную концепцию, путь гостя, свет, материалы, формы, сервировку и работу подрядчиков в одну понятную систему."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Когда лучше подключать арт-директора?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Лучше всего подключать арт-директора на старте проекта, иногда еще до выбора площадки. Тогда идея сразу соотносится с локацией, бюджетом, сроками, техническими возможностями и реальной сборкой."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Можно ли подключить арт-директора на позднем этапе?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. Арт-директора можно подключить локально: развить уже выбранную идею, привести визуальные решения к общей логике, усилить отдельную зону или помочь команде принять точные решения перед реализацией."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Что входит в полное ведение art direction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Обычно это бриф, поиск генеральной идеи, визуальная концепция, схемы и визуализации ключевых зон, технические задания подрядчикам, подбор материалов, контроль производства и сопровождение работы на площадке."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Что такое визуальная концепция для тендера?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Это первый сильный визуальный пакет для агентства или бренда: логичная идея, moodboard, референсы, базовые решения по пространству и реалистичная опора на сроки, бюджет и технические возможности."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Что значит art direction и декор под ключ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Это формат, где команда берет не только арт-дирекшн, но и декоративную реализацию: коммуникацию с декором, детализацию, производство декоративных элементов и контроль результата."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Работаете ли вы с NDA и закрытыми проектами?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. Большая часть частных и брендовых проектов не публикуется. Мы работаем с NDA, закрытыми событиями и задачами, где важны конфиденциальность и аккуратная коммуникация."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Делаете ли вы 3D, AI-эскизы и визуализации?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. Для проекта можно подготовить AI-эскизы, 3D-макеты, схемы пространства, визуализации ключевых зон и проходки. Объем таких материалов зависит от задачи и считается отдельно."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "С какими проектами и стилями вы работаете?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Мы работаем с частными и корпоративными событиями, ужинами, презентациями, открытиями, показами, детскими праздниками, региональными и выездными проектами. Стиль не фиксирован: визуальная система собирается под задачу, площадку и аудиторию."
+            }
+          }
+        ]
+      }
+    </script>
     <style>
       :root {
         --black: #111111;
@@ -758,30 +846,37 @@
 
       footer {
         display: block;
-        padding: 60px 0;
+        padding: 64px 0;
         border-top: 1px solid var(--line);
         background: var(--white);
       }
 
+      .footer-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+        gap: clamp(36px, 7vw, 96px);
+        align-items: start;
+      }
+
       .footer-logo {
-        width: min(470px, 100%);
-        margin: 0 auto 34px;
+        width: min(300px, 100%);
+        margin: 0 0 28px;
       }
 
       .footer-logo .logo-name {
-        font-size: clamp(32px, 4.2vw, 54px);
+        font-size: clamp(24px, 2.4vw, 34px);
       }
 
       .footer-logo .logo-sub {
         margin-top: 8px;
-        max-width: 470px;
-        font-size: 12px;
+        max-width: 300px;
+        font-size: 10px;
       }
 
       .footer-partners {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 10px;
       }
 
@@ -797,11 +892,68 @@
         font-size: 14px;
       }
 
+      .footer-faq {
+        display: grid;
+        gap: 8px;
+      }
+
+      .footer-faq-label {
+        display: block;
+        margin-bottom: 18px;
+        color: var(--muted);
+        font-size: 13px;
+        text-transform: lowercase;
+      }
+
+      .faq-item {
+        border-top: 1px solid var(--line);
+      }
+
+      .faq-item:last-child {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .faq-item summary {
+        min-height: 56px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: center;
+        cursor: pointer;
+        list-style: none;
+        font-size: clamp(18px, 2vw, 27px);
+        line-height: 1.12;
+      }
+
+      .faq-item summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .faq-item summary::after {
+        content: "+";
+        font-size: 28px;
+        line-height: 1;
+      }
+
+      .faq-item[open] summary::after {
+        content: "-";
+      }
+
+      .faq-item p {
+        max-width: 820px;
+        margin: 0;
+        padding: 0 54px 24px 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.44;
+      }
+
       @media (max-width: 900px) {
         .nav-inner,
         .section-title,
         .proposal .wrap,
-        .contacts-grid {
+        .contacts-grid,
+        .footer-grid {
           grid-template-columns: 1fr;
         }
 
@@ -853,6 +1005,20 @@
 
         .contact-main {
           padding-top: 48px;
+        }
+
+        .footer-logo {
+          margin-bottom: 20px;
+        }
+
+        .faq-item summary {
+          min-height: 52px;
+          font-size: 18px;
+        }
+
+        .faq-item p {
+          padding-right: 0;
+          font-size: 15px;
         }
       }
 
@@ -1241,14 +1407,103 @@
       </main>
 
       <footer>
-        <div class="wrap">
-          <div class="logo footer-logo" aria-label="Таня Бугаева — арт-директор, декор, визуальные концепции">
-            <div class="logo-line"><span class="logo-name">Таня Бугаева</span></div>
-            <div class="logo-sub">арт-директор / декор / визуальные концепции</div>
+        <div class="wrap footer-grid">
+          <div class="footer-faq" aria-label="Вопросы об арт-дирекшне мероприятий">
+            <span class="footer-faq-label">вопросы об art direction</span>
+            <details class="faq-item">
+              <summary>Что такое арт-дирекшн мероприятия?</summary>
+              <p>
+                Арт-дирекшн — это контроль идеи и всей визуальной системы события:
+                декора, света, типографики, сценографии, костюма, подачи продукта,
+                экранного контента и деталей, которые гость считывает как единую
+                историю.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Чем арт-дирекшн отличается от декора?</summary>
+              <p>
+                Декор отвечает за предметную и декоративную часть пространства.
+                Арт-директор смотрит шире: собирает визуальную концепцию, путь гостя,
+                свет, материалы, формы, сервировку и работу подрядчиков в одну
+                понятную систему.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Когда лучше подключать арт-директора?</summary>
+              <p>
+                Лучше всего — на старте проекта, иногда еще до выбора площадки.
+                Тогда идея сразу соотносится с локацией, бюджетом, сроками,
+                техническими возможностями и реальной сборкой.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Можно ли подключить арт-директора на позднем этапе?</summary>
+              <p>
+                Да. Арт-директора можно подключить локально: развить уже выбранную
+                идею, привести визуальные решения к общей логике, усилить отдельную
+                зону или помочь команде принять точные решения перед реализацией.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Что входит в полное ведение art direction?</summary>
+              <p>
+                Обычно это бриф, поиск генеральной идеи, визуальная концепция,
+                схемы и визуализации ключевых зон, технические задания подрядчикам,
+                подбор материалов, контроль производства и сопровождение работы
+                на площадке.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Что такое визуальная концепция для тендера?</summary>
+              <p>
+                Это первый сильный визуальный пакет для агентства или бренда:
+                логичная идея, moodboard, референсы, базовые решения по пространству
+                и реалистичная опора на сроки, бюджет и технические возможности.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Что значит art direction и декор под ключ?</summary>
+              <p>
+                Это формат, где команда берет не только арт-дирекшн, но и
+                декоративную реализацию: коммуникацию с декором, детализацию,
+                производство декоративных элементов и контроль результата.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Работаете ли вы с NDA и закрытыми проектами?</summary>
+              <p>
+                Да. Большая часть частных и брендовых проектов не публикуется.
+                Мы спокойно работаем с NDA, закрытыми событиями и задачами, где
+                важны конфиденциальность и аккуратная коммуникация.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Делаете ли вы 3D, AI-эскизы и визуализации?</summary>
+              <p>
+                Да. Для проекта можно подготовить AI-эскизы, 3D-макеты, схемы
+                пространства, визуализации ключевых зон и проходки. Объем таких
+                материалов зависит от задачи и считается отдельно.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>С какими проектами и стилями вы работаете?</summary>
+              <p>
+                Мы работаем с частными и корпоративными событиями, ужинами,
+                презентациями, открытиями, показами, детскими праздниками,
+                региональными и выездными проектами. Стиль не фиксирован: визуальная
+                система собирается под задачу, площадку и аудиторию.
+              </p>
+            </details>
           </div>
-          <div class="footer-partners">
-            <a class="partner-pill" href="https://www.soyuz-decor.ru/ru/" target="_blank" rel="noreferrer">Союз Decor — декор любых мероприятий</a>
-            <a class="partner-pill" href="https://www.serebro-agency.com/" target="_blank" rel="noreferrer">Серебро — организация событий</a>
+          <div>
+            <div class="logo footer-logo" aria-label="Таня Бугаева — арт-директор, декор, визуальные концепции">
+              <div class="logo-line"><span class="logo-name">Таня Бугаева</span></div>
+              <div class="logo-sub">арт-директор / декор / визуальные концепции</div>
+            </div>
+            <div class="footer-partners">
+              <a class="partner-pill" href="https://www.soyuz-decor.ru/ru/" target="_blank" rel="noreferrer">Союз Decor — декор любых мероприятий</a>
+              <a class="partner-pill" href="https://www.serebro-agency.com/" target="_blank" rel="noreferrer">Серебро — организация событий</a>
+            </div>
           </div>
         </div>
       </footer>
