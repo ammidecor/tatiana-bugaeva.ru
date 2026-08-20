@@ -883,36 +883,39 @@
 
       .footer-grid {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
-        gap: clamp(36px, 7vw, 96px);
+        grid-template-columns: repeat(3, minmax(180px, 1fr)) minmax(170px, 0.72fr);
+        gap: 12px;
         align-items: start;
       }
 
       .footer-logo {
-        width: min(300px, 100%);
-        margin: 0 0 28px;
+        width: 100%;
+        max-width: 230px;
+        justify-self: end;
+        margin: 0;
+        min-height: 44px;
+        align-content: center;
       }
 
       .footer-logo .logo-name {
-        font-size: clamp(24px, 2.4vw, 34px);
+        font-size: clamp(18px, 1.5vw, 24px);
       }
 
       .footer-logo .logo-sub {
-        margin-top: 8px;
+        margin-top: 6px;
         max-width: 300px;
-        font-size: 10px;
+        font-size: 8px;
       }
 
       .footer-partners {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 10px;
+        display: contents;
       }
 
       .partner-pill {
-        display: inline-flex;
+        width: 100%;
+        display: flex;
         align-items: center;
+        justify-content: center;
         min-height: 44px;
         padding: 0 20px;
         border: 1px solid var(--black);
@@ -920,26 +923,35 @@
         background: var(--black);
         color: var(--white);
         font-size: 14px;
+        line-height: 1.12;
+        text-align: center;
       }
 
       .footer-faq {
-        display: block;
+        display: contents;
+      }
+
+      .footer-faq-panel {
+        display: contents;
       }
 
       .footer-faq-label {
-        width: fit-content;
+        width: 100%;
         min-height: 44px;
-        display: inline-flex;
+        display: flex;
         align-items: center;
+        justify-content: center;
         gap: 16px;
         padding: 0 20px;
         border: 1px solid var(--black);
         border-radius: 999px;
-        background: var(--white);
-        color: var(--black);
+        background: var(--black);
+        color: var(--white);
         cursor: pointer;
         list-style: none;
         font-size: 14px;
+        line-height: 1.12;
+        text-align: center;
         text-transform: lowercase;
       }
 
@@ -958,9 +970,11 @@
       }
 
       .footer-faq-list {
+        grid-column: 1 / -1;
+        order: 2;
         display: grid;
         gap: 8px;
-        margin-top: 22px;
+        margin-top: 18px;
       }
 
       .faq-item {
@@ -1456,7 +1470,7 @@
             <div class="contact-main">
               <p class="contact-info">Москва, регионы, выездные проекты<br />Art Direction & Decor</p>
               <div class="contact-lines">
-                <a href="tel:+79114540558">+7 911 454 05 58</a>
+                <span>+7 911 454 05 58</span>
               </div>
               <div class="socials">
                 <a class="social tg" href="https://t.me/ammi_f" target="_blank" rel="noreferrer" aria-label="Telegram @ammi_f"></a>
@@ -1580,15 +1594,11 @@
               </div>
             </details>
           </div>
-          <div>
-            <div class="logo footer-logo" aria-label="Таня Бугаева — арт-директор, декор, визуальные концепции">
-              <div class="logo-line"><span class="logo-name">Таня Бугаева</span></div>
-              <div class="logo-sub">арт-директор / декор / визуальные концепции</div>
-            </div>
-            <div class="footer-partners">
-              <a class="partner-pill" href="https://www.soyuz-decor.ru/ru/" target="_blank" rel="noreferrer">Союз Decor — декор любых мероприятий</a>
-              <a class="partner-pill" href="https://www.serebro-agency.com/" target="_blank" rel="noreferrer">Серебро — организация событий</a>
-            </div>
+          <a class="partner-pill" href="https://www.soyuz-decor.ru/ru/" target="_blank" rel="noreferrer">Союз Decor — декор любых мероприятий</a>
+          <a class="partner-pill" href="https://www.serebro-agency.com/" target="_blank" rel="noreferrer">Серебро — организация событий</a>
+          <div class="logo footer-logo" aria-label="Таня Бугаева — арт-директор, декор, визуальные концепции">
+            <div class="logo-line"><span class="logo-name">Таня Бугаева</span></div>
+            <div class="logo-sub">арт-директор / декор / визуальные концепции</div>
           </div>
         </div>
       </footer>
